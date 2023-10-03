@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+          <img src="Image/logo.png" class="logo" width="250" height="60">
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+          </style>
+          <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class='bx bx-x' onclick="closemenu()" ></i>
+          </ul>
+          <i class='bx bx-menu-alt-right' onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+          <h3>Hello, It's Me</h3>
+          <h1>Vineet Singh</h1>
+          <h3>And I'm a </h3>
+          <h2><span class="text"></span></h2>
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/vineet-vinod-singh/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/nobody.knows.me0/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/Vineet-Singh0"><i class='bx bxl-github'></i></a>
+            <a href="mailto: vineet.svr@gmail.com"><i class='bx bxl-gmail'></i></a>
+        </div>
+      </div>
+      <script src="port.js"></script>
+    </div>
+  </div>
+
+    <section class="about" id="about">
+          <div class="contain">
+              <div class="row1">
+                <div class="about-col-1">
+                    <img src="Image/Screenshot_2023-09-17_at_3.26.03_PM-removebg.png">
+                </div>
+        
+                <div class="about-col-2">
+                    <h2><span>About Me</span></h2>
+                    <p>Hello there! 👋 I'm an Engineering graduate skilled in HTML, CSS, JS and Python, eager to transform ideas into visual magic and amplify online presence. I hold a degree from Dr. Babasaheb Ambedkar Technology University. Besides my data passion, I'm an avid Graphic Designer with an insatiable curiosity for all things tech.
+                        I hold a degree from Dr. Babasaheb Ambedkar Technology University. Besides my data passion, I'm an avid Graphic Designer with an insatiable curiosity for all things tech.
+                        I hold a degree from Dr. Babasaheb Ambedkar Technology University. Besides my data passion, I'm an avid Graphic Designer with an insatiable curiosity for all things tech.
+                        My current goal? To collaborate with a reputed organization as a Data Scientist, driven by self-learning, process orientation, and a thirst for technological innovation. Let's innovate together!
+                        Let's connect and discuss opportunities!</p>
+        
+                        <div class="titles">
+                            <p><span class="tab-links active-link" onclick="opentab('education')">Education</span></p>
+                            <p><span class="tab-links" onclick="opentab('certification')">Acomplisment and Certification</span></p>
+                        </div>
+                        <div class="tab-content active-tab" id="education">
+                            <ul>
+                                <li><span>Dr. Babasaheb Ambedkar Technological University, Lonere</span><br>Bachelor's Degree (2020-2024)</br>Electronics and Telecommunication Engineering</li>
+                                <li><span>Bhavan's B.P Vidya Mandir Ashti</span><br>High School (2018-2020)</br>Physics, Chemistry, Maths and Computer Science</li>
+                                <li><span>K.John Public School</span><br>Junior High School (2018)</br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content sub" id="certification">
+                            <ul>
+                                <li><i>POSCO Asia Fellowship</i></li>
+                                <li><i>AI for India by GUVI and Skill India</i></li>
+                                <li><i>Mobile App Development by Cisco Thingqbator</i></li>
+                                <li><i>Won Second Prize in Jindal Science Conclave</i></li>
+                                <li><i>Topped in English And Science Olympiad at Junior High School</i></li>
+                            </ul>
+                        </div>
+                </div>    
+              </div>
+          </div>  
+          
+    </section> 
+   
+    <!-------Skills----------->
+    <div class="skills" id="skills">
+        <h1 class="sub-title">My Skills</h1> 
+    </div>
+    <section class="myskills" id="myskills">  
+       <div class="container1">
+           <h1 class="heading1">Technical Skills</h1>
+           <div class="technical-bars">
+               <div class="bar"><i style="color: #f06925;" class='bx bxl-html5'></i>
+                   <div class="info">
+                       <span>HTML</span>
+                   </div>
+                   <div class="progress-line html">
+                       <span></span>
+                   </div>
+               </div>
+               <div class="bar"><i style="color: #2965f1;" class='bx bxl-css3' ></i>
+                   <div class="info">
+                       <span>CSS</span>
+                   </div>
+                   <div class="progress-line css">
+                       <span></span>
+                   </div>
+               </div>
+               <div class="bar"><i style="color: #f0db4f;" class='bx bxl-javascript' ></i>
+                   <div class="info">
+                       <span>Javascript</span>
+                   </div>
+                   <div class="progress-line js">
+                       <span></span>
+                   </div>
+               </div>
+               <div class="bar"><i style="color: #00b3ff;" class='bx bxl-python' ></i>
+                   <div class="info">
+                       <span>Python</span>
+                   </div>
+                   <div class="progress-line python">
+                       <span></span>
+                   </div>
+               </div>
+               <div class="bar"><i style="color: #2068A6;" class='bx bxl-c-plus-plus' ></i>
+                   <div class="info">
+                       <span>C++</span>
+                   </div>
+                   <div class="progress-line cpp">
+                       <span></span>
+                   </div>
+               </div>
+           </div>
+       </div> 
+
+       <div class="container1">
+           <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars">
+                <div class="radial-bar">
+
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                 </div>
+                 <div class="radial-bar">
+     
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">Communication</div>
+                 </div>
+                 <div class="radial-bar">
+     
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">Leadership</div>
+                 </div>
+                 <div class="radial-bar">
+     
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">70%</div>
+                    <div class="text">Problem Solving</div>
+                 </div>
+            </div>
+       </div>
+    </section>
+
+     <!-------Skills----------->
+
+
+      <!------Projects--------->
+
+      <div id="projects">
+          <div class="container2">
+              <h1 class="sub-title">My Projects</h1>
+              <div class="project-list">
+                 <div class="project">
+                     <img src="Image/Multipurpose agriculture.png" width="100%" height=auto>
+                     <div class="layers">
+                         <h3>Multipurpose Agriculture Equipment</h3>
+                         <p>Multipurpose agriculture equipment (MAE) is a type of machinery that can be used for multiple agricultural operations, such as ploughing, sowing, weeding, and harvesting. MAE offers several advantages over traditional single-purpose equipment, including reduced costs, increased efficiency, and improved sustainability. MAE is becoming increasingly popular among farmers around the world, as it can help them to save time and money, while also reducing their environmental impact. However, there are still some challenges that need to be addressed, such as the high cost of some MAE and the need for farmers to be trained on how to use it effectively.Overall, MAE has the potential to revolutionize agriculture by making it more efficient, sustainable, and profitable.</p>
+                     </div>
+                 </div>
+                 <div class="project">
+                     <img src="Image/20230104_150817.jpg"width="100%" height=auto>
+                     <div class="layers">
+                        <h3>Gas Leakage Detection and Alerting System</h3>
+                        <p> Gas leakage detection and alerting using Arduino Uno is a vital safety system that employs sensors to monitor gas levels in the environment. The Arduino Uno, equipped with gas sensors, continuously analyzes air quality for the presence of harmful gases. When a gas leak is detected, the system triggers an alarm, notifying occupants and authorities, ensuring rapid response to potential hazards. This cost-effective and efficient solution offers real-time monitoring, early warning, and peace of mind, making it an essential tool for safeguarding lives and property against the dangers of gas leaks.</p>
+                    </div>
+                 </div>
+                 <div class="project">
+                     <img src="Image/20230728_030032.jpg"width="100%" height=auto>
+                     <div class="layers">
+                        <h3>Mitigating Train Collisions with Wildlife</h3>
+                        <p>Mitigating train collisions with wildlife is a critical concern for both biodiversity conservation and railway safety. Employing Arduino Uno with IR sensors offers an innovative solution. These sensors detect the presence of wildlife near railway tracks and trigger warning systems. When an animal is detected, the system can activate warning lights, sirens, or even remotely alert train operators to slow down or stop. This cost-effective and efficient technology enhances railway safety, reduces the risk of animal fatalities, and contributes to the preservation of ecosystems. By combining Arduino Uno and IR sensors, we pave the way for a proactive approach to reduce train collisions with wildlife.</p>
+                    </div>
+                 </div>
+                 <div class="project">
+                     <img src="Image/Portfolio.png"width="100%" height=auto>
+                     <div class="layers">
+                        <h3>Portfolio</h3>
+                        <p>A portfolio website created with HTML, CSS, and JavaScript is a dynamic online showcase of an individual's or a company's work and skills. HTML provides the structure and content, CSS adds style and visual appeal, while JavaScript enhances interactivity and user experience. This combination allows for seamless navigation, responsive design, and engaging animations, making the portfolio a captivating platform for displaying projects, art, or services. It not only highlights the creator's talents but also offers visitors an immersive and user-friendly way to explore their accomplishments, ultimately serving as a powerful tool for personal branding and professional representation.</p>
+                    </div>
+                 </div>
+                 <div class="project">
+                     <img src="Image/fraud-detection-using-machine-ml.png"width="100%" height=auto>
+                     <div class="layers">
+                        <h3>Fraud Detection using Machine Learning</h3>
+                        <p>Online fraud detection using machine learning is a crucial and evolving field in cybersecurity. Leveraging advanced algorithms and data analysis techniques, it aims to identify fraudulent activities swiftly and accurately in digital transactions. By analyzing patterns, anomalies, and historical data, machine learning models can detect suspicious behavior in real-time, providing a proactive defense against various online fraud schemes, including identity theft, credit card fraud, and phishing attacks. This technology not only enhances security but also ensures a safer online environment, protecting individuals and organizations from financial losses and data breaches.</p>
+                    </div>
+                 </div>
+                 <div class="project">
+                     <img src="Image/17806780_5817154.jpg"width="100%" height=auto>
+                     <div class="layers">
+                        <h3>CertifyMe</h3>
+                        <p>CertifyMe is a cutting-edge online platform designed to streamline the certification and document issuance process for colleges and universities. With user-friendly features and advanced security protocols, CertifyMe empowers educational institutions to efficiently generate and distribute digital certificates and documents to their students. This innovative website offers a seamless experience for students, enabling them to access and share their academic achievements with ease. By digitizing the certification process, CertifyMe not only enhances convenience but also ensures the authenticity and integrity of academic credentials. Join us in revolutionizing the way educational certificates and documents are managed, with CertifyMe as your trusted partner.</p>
+                    </div>
+                 </div>
+              </div>
+          </div>
+      </div>
+
+      <!-----Contact------>
+      <div id="contact">
+          <div class="container3">
+            <h1 class="sub-title">Contact Me</h1>
+              <div class="row">
+                  <div class="contact-left">
+                      <p><i class='bx bxl-gmail' ></i>vineet.svr@gmail.com</p>
+                      <p><i class='bx bxs-phone'></i>8888664864</p>
+                      <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vineet-vinod-singh/"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.instagram.com/nobody.knows.me0/"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://github.com/Vineet-Singh0"><i class='bx bxl-github'></i></a>
+                        <a href="mailto: vineet.svr@gmail.com"><i class='bx bxl-gmail'></i></a> 
+                      </div>
+                      <a href="Image/Resume.pdf" download class="butn btn2">Download CV</a>
+                  </div>
+                  <div class="contact-right">
+                      <form name="submit-to-google-sheet">
+                          <input type="text" name="Name" placeholder="Your Name" required>
+                          <input type="email" name="Email" placeholder="Your Email" required>
+                          <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                          <button type="submit" class="butn btn2">Submit</button>
+                          <p>Copyright © Vineet </p>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+</div>
+</body>
+  
+  <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxjSClNeAhVQ9dMA2fE2VxMpqfKzslSsa8_bNRvO8xh8ahM6_4OvbJ4dSNfahlceuEn/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    ScrollReveal({ 
+        reset: true,
+        distance: '80px',
+        duration: 2500,
+        delay: 400
+        });
+        ScrollReveal().reveal('.about-col-1', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.about-col-2', { delay: 600, origin: 'right' });
+        ScrollReveal().reveal('.titles', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('#education', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.sub-title', { delay: 600, origin: 'top' });
+        ScrollReveal().reveal('.technical-bars', { delay: 800, origin: 'left' });
+        ScrollReveal().reveal('.heading1', { delay: 700, origin: 'bottom' });
+        ScrollReveal().reveal('.radial-bars', { delay: 800, origin: 'right' });
+        ScrollReveal().reveal('.project-list', { delay: 800, origin: 'left' });
+        ScrollReveal().reveal('.contact-left', { delay: 700, origin: 'left' });
+        ScrollReveal().reveal('.contact-right', { delay: 800, origin: 'bottom' });  
+          
+</script>
+</html>

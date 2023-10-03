@@ -1,0 +1,829 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter','serif';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #fff;
+    color: black;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Image/Background11.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    animation: slideLeft 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FFB81D;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20px;
+    font-size: 35px;
+    padding: 8%;
+    color: #fff;
+}
+.header-text h3{
+    font-size: 45px;
+    font-weight: 700;
+    animation: slidetop 1s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+.header-text h1{
+    font-size: 96px;
+    font-weight: 700;
+    margin: -3px 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.header-text h2{
+    margin-top: 15px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #FFC442;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+}
+.icon a{
+    display: inline-flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #FFC442;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #FFC442;
+    text-decoration: none;
+    margin: 30px 15px 30px 0; 
+    animation: slideLeft1 1s ease forwards;
+    opacity: 0;
+}
+.icon a:hover{
+    background: #FFC442;
+    color: black;
+    box-shadow: 0 0 20px #FFC442;
+}
+
+.logo{
+    animation: slideRight 2s ease forwards;
+    padding-left: 30px;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidetop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slidebottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft1{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(00px);
+        opacity: 1;
+    }
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/Background2\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+
+.about{
+    padding: 80px 0;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    height: auto;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 h2 span{
+    font-size: 80px;
+    color: #8370FA;
+    padding-left: 5%;
+}
+.about-col-2 p{
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 3%;
+    text-align: justify;
+    padding-right: 3%;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FFC442;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+.titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-content.active-tab ul li{
+    list-style: none;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.tab-content.active-tab ul li span{
+    color: #8370FA;
+    font-size: 22px;
+    font-weight:bolder;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
+}
+
+.tab-content.sub ul li{
+    list-style: disc;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.extra{
+    background-image: url(Image/Background2\ \(1\).png);
+}
+/*------------My Skills----------*/
+
+#skills{
+      background-image: url(Image/Background2\ \(1\).png);
+      background-size: cover;
+      background-position: center;
+}
+.skills .sub-title{
+     text-align: center;
+     font-size: 70px;
+     padding-top: 125px;
+     padding-bottom: 30px;
+     color: #8370FA;
+}
+#myskills{
+    background-image: url(Image/Background2\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+
+.myskills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 90px;
+    margin-right: 30px;
+}
+.heading1{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 10px;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 23px;
+}
+.technical-bars .bar{
+    margin-top: 40px 0;
+    padding-bottom: 5px;
+}
+.technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.technical-bars .bar:last-child{
+    margin-bottom: 0px;
+}
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.technical-bars .bar .info span{
+    font-size: 18px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: #000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #FFC442;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span{
+    width: 70%;
+}
+.progress-line.css span{
+    width: 65%;
+}
+.progress-line.js span{
+    width: 60%;
+}
+.progress-line.python span{
+    width: 80%;
+}
+.progress-line.cpp span{
+    width: 90%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "70%";
+}
+.progress-line.css span::after{
+    content: "65%";
+}
+.progress-line.js span::after{
+    content: "60%";
+}
+.progress-line.python span::after{
+    content: "80%";
+}
+.progress-line.cpp span::after{
+    content: "90%";
+}
+
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+.radial-bars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: #000000;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 13;
+    stroke: #FFC442;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards}
+.path-2{animation: animate-path2 1s 1s linear forwards}
+.path-3{animation: animate-path3 1s 1s linear forwards}
+.path-4{animation: animate-path4 1s 1s linear forwards}
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 30%;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 45%;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 60%;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 75%;
+    }
+}
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 20px;
+    font-weight: 700;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+/*-----------Projects--------*/
+
+#projects{
+    padding: 30px 0;
+    background-image: url(Image/Background2\ \(1\).png);
+}
+.container2 .sub-title{
+    position: relative;
+     text-align: center;
+     font-size: 70px;
+     padding-top: 125px;
+     padding-bottom: 30px;
+     color: #8370FA;
+}
+
+.project-list{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(400px,5fr));
+ grid-gap: 40px;
+ margin-top:50px;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layers{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(173, 168, 168, 0.6), #ffb61a);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layers h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.layers p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 900;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+
+.project:hover .layers{
+    height: 100%;
+}
+
+/*--------contact--------*/
+#contact{
+    background-image: url(Image/Background1.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.row{
+    display: flex;
+}
+
+.container3 .sub-title{
+     position: relative;
+     text-align: center;
+     font-size: 80px;
+     padding-top: 30px;
+     padding-bottom: 20px;
+     padding-left: 50px;
+     color: #000;
+}
+.contact-left{
+    flex: 50%;
+    padding-left: 150px;
+}
+.contact-right{
+    flex-basis:60%;
+    padding-right: 150px;
+    display: center;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contact-left p i{
+    color: #FFB81D;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.social-icons a{
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #FFC442;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #FFC442;
+    text-decoration: none;
+    margin: 30px 15px 30px 0; 
+}
+.social-icons a:hover{
+    background: #FFC442;
+    color: black;
+    box-shadow: 0 0 20px #FFC442;
+}
+
+.butn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #FFB81D;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+}
+.butn.btn2{
+    display: inline-block;
+    background: #FFB81D;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    margin: 15px 0;
+    color: #000;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+form .btn2{
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*------------css for small screen---------*/
+nav .bx{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(Image/phone\ background.png);
+    }
+    .header-text h1{
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .header-text h3{
+        font-size: 30px;
+    }
+    .header-text h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    nav .bx{
+        display: block;
+        font-size: 30px;
+    }
+    nav ul{
+        background: #FFC442;
+        position: fixed;
+        top: 0;
+        left: 210px;
+        width: 210px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .bx{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 150px;
+        height: 40px;
+        padding-left: -30px;
+    }
+    .icon a{
+        padding: 15px;
+        font-size: 20px;
+    }
+    .about-col-2 h2 span{
+        font-size: 50px;
+        padding-left: 80px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2 p{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    #education{
+        padding-left: 10px;
+    }
+    #education ul li{
+        font-size: 12px;
+    }
+    #education ul li span{
+        font-size: 16px;
+    }
+    #certification ul li{
+        font-size: 14px;
+        list-style: disc;
+    }
+    .skills .sub-title{
+        padding-top: 350px;
+        font-size: 50px;
+    }
+    .myskills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container1{
+        width: 600px;
+        height: 500px;
+        margin-left: -70px;
+        margin-right: -30px;
+    }
+  
+    .heading1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .row{
+        display:grid;
+    }
+    .contact-left{
+        margin-left: -120px;
+    }
+    .contact-right{
+        margin-left: 30px;
+        margin-right: -120px;
+    }
+    .container3 .sub-title{
+         margin-left: -50px;
+         font-size: 60px;
+    }
+    .butn.btn2{
+        font-size: 20px;
+    }
+    form p{
+        text-align: center;
+    }
+    .project{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .project img{
+        width: 100%;
+        height: auto;
+    }
+    .layers h3{
+        font-size: 16px;
+    }
+    .layers p{
+        font-size: 12px;
+    }
+    .container2 .sub-title{
+        font-size: 50px;
+    }
+}

@@ -874,7 +874,7 @@ nav .bx{
     .icon a{
         padding: 30px;
         font-size: 25px;
-        display: flex;
+        display:flex;
     }
 
     .about-col-2 h2 span{

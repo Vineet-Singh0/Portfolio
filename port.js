@@ -25,8 +25,8 @@ function opentab(tabname){
 var sidemenu=document.getElementById("sidemenu");
 
 function openmenu(){
-    sidemenu.style.left="210px";
+    sidemenu.style.left="610px";
 }
 function closemenu(){
-    sidemenu.style.left="-210px";
+    sidemenu.style.left="-610px";
 }

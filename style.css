@@ -772,7 +772,7 @@ nav .bx{
         list-style: disc;
     }
     .skills .sub-title{
-        padding-top: 650px;
+        padding-top: 350px;
         font-size: 50px;
     }
     .myskills{
@@ -780,7 +780,7 @@ nav .bx{
         flex-wrap: wrap;
     }
     .container1{
-        width: 350px;
+        width: 600px;
         height: 500px;
         margin-left: -70px;
         margin-right: -30px;

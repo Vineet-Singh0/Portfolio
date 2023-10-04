@@ -281,7 +281,7 @@ nav ul li a:hover::after{
 .skills .sub-title{
      text-align: center;
      font-size: 70px;
-     padding-top: 125px;
+     padding-top: 200px;
      padding-bottom: 30px;
      color: #8370FA;
 }
@@ -690,7 +690,7 @@ form p{
 nav .bx{
     display: none;
 }
-@media only screen and (max-width: 600px){
+@media  (max-width: 500px){
     #header{
         background-image: url(Image/phone\ background.png);
     }
@@ -738,6 +738,7 @@ nav .bx{
     .icon a{
         padding: 15px;
         font-size: 20px;
+        display:flex;
     }
     .about-col-2 h2 span{
         font-size: 50px;
@@ -771,7 +772,7 @@ nav .bx{
         list-style: disc;
     }
     .skills .sub-title{
-        padding-top: 350px;
+        padding-top: 650px;
         font-size: 50px;
     }
     .myskills{
@@ -818,12 +819,167 @@ nav .bx{
         height: auto;
     }
     .layers h3{
-        font-size: 16px;
+        font-size: 14px;
     }
     .layers p{
-        font-size: 12px;
+        font-size: 10px;
     }
     .container2 .sub-title{
         font-size: 50px;
     }
+}
+
+@media (max-width: 900px) and (min-width: 500px){
+    #header{
+        background-image: url(Image/phone\ background.png); 
+        background-size: cover;
+        background-position: center; 
+    }
+    .header-text h1{
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .header-text h3{
+        font-size: 30px;
+    }
+    .header-text h2{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    nav .bx{
+        display: block;
+        font-size: 30px;
+    }
+    nav ul{
+        background: #FFC442;
+        position: fixed;
+        top: 0;
+        left: 50px;
+        width: 210px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .bx{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .icon a{
+        padding: 30px;
+        font-size: 25px;
+        display: flex;
+    }
+
+    .about-col-2 h2 span{
+        font-size: 80px;
+        padding-left: 150px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 90%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2 p{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .tab-links{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    #education{
+        padding-left: 10px;
+    }
+    #education ul li{
+        font-size: 16px;
+    }
+    #education ul li span{
+        font-size: 16px;
+    }
+    #certification ul li{
+        font-size: 14px;
+        list-style: disc;
+    }
+
+    .skills .sub-title{
+        padding-top: 900px;
+        font-size: 80px;
+        text-align: left;
+        padding-left: 200px;
+    }
+
+    .myskills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container1{
+        width: 600px;
+        height: 500px;
+        margin-left: -70px;
+        margin-right: -30px;
+    }
+  
+    .heading1{
+        font-size: 25px;
+        text-align: left;
+        margin-left: 250px;
+        margin-right: -150px;
+
+    }
+    .technical-bars{
+        margin-left: 150px;
+        margin-right: -90px;
+    }
+    .radial-bars{
+        margin-left: 150px;
+        margin-right: -90px;
+    }
+    .row{
+        display:grid;
+    }
+    .contact-left{
+        margin-left: -120px;
+    }
+    .contact-right{
+        margin-left: 30px;
+        margin-right: -60px;
+    }
+    .container3 .sub-title{
+         margin-left: -50px;
+         font-size: 60px;
+    }
+    .butn.btn2{
+        font-size: 20px;
+    }
+    form p{
+        text-align: center;
+    }
+    .project-list{
+        padding-left: 20px;
+        padding-right: 80px;
+    }
+    .project img{
+        width: 100%;
+        height: auto;
+    }
+    .layers h3{
+        font-size: 24px;
+    }
+    .layers p{
+        font-size: 20px;
+    }
+    .container2 .sub-title{
+        font-size: 80px;
+        margin-left: -70px;
+    }
+
 }

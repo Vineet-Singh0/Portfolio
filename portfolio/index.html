@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vineet Singh</title>
+  <link rel="icon" type="image/png" href="assets/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#home">
+        <img src="assets/logo.png" alt="Vineet Logo" height="48" class="me-2 logo-animated" style="max-height:48px;" tabindex="0">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section-custom d-flex align-items-center justify-content-center text-center">
+    <div class="container position-relative z-2">
+      <img src="assets/Profile.jpg" alt="Vineet Profile Photo" class="rounded-circle shadow-lg mb-4 hero-img-custom" tabindex="0">
+      <h3 class="hero-greeting" tabindex="0"><span id="dynamic-greeting"></span>, It's Me</h3>
+      <h1 class="hero-name" tabindex="0">Vineet Singh</h1>
+      <h3 class="hero-role" tabindex="0">And I'm a</h3>
+      <h2><span class="typed-text" tabindex="0"></span></h2>
+      <div class="hero-social-icons mt-4">
+        <a href="https://www.linkedin.com/in/vineet-vinod-singh/" target="_blank" class="hero-icon-link" tabindex="0"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.instagram.com/nobody.knows.me0/" target="_blank" class="hero-icon-link" tabindex="0"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/Vineet-Singh0" target="_blank" class="hero-icon-link" tabindex="0"><i class='bx bxl-github'></i></a>
+        <a href="mailto:vineet.svr@gmail.com" class="hero-icon-link" tabindex="0"><i class='bx bxl-gmail'></i></a>
+      </div>
+    </div>
+    <div class="scroll-down-arrow" tabindex="0" aria-label="Scroll down">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC442" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down">
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <polyline points="19 12 12 19 5 12"></polyline>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="about-card" data-aos="fade-up">
+            <div class="about-header">
+              <img src="assets/Profile.jpg" alt="Vineet Profile" class="about-avatar" tabindex="0">
+              <div>
+                <h2 class="about-title" tabindex="0">About Me</h2>
+                <p class="about-subtitle" tabindex="0">Aspiring Data Professional</p>
+              </div>
+            </div>
+            
+            <div class="about-description" tabindex="0">
+              <p>Passionate about transforming raw data into actionable insights. With a strong foundation in data analysis and machine learning, I specialize in creating data-driven solutions that solve real-world problems. My journey in data science is driven by curiosity and a constant desire to learn and innovate.</p>
+            </div>
+
+            <div class="skills-container" aria-label="Technical Skills">
+              <span class="skill-badge" tabindex="0">Python</span>
+              <span class="skill-badge" tabindex="0">SQL</span>
+              <span class="skill-badge" tabindex="0">Machine Learning</span>
+              <span class="skill-badge" tabindex="0">Data Visualization</span>
+              <span class="skill-badge" tabindex="0">Statistical Analysis</span>
+              <span class="skill-badge" tabindex="0">Deep Learning</span>
+              <span class="skill-badge" tabindex="0">Pandas</span>
+              <span class="skill-badge" tabindex="0">Scikit-learn</span>
+            </div>
+
+            <div class="about-stats">
+              <div class="stat-item" tabindex="0">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item" tabindex="0">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+            </div>
+
+            <div class="education-section-inner mt-5">
+              <h3 class="section-subtitle" tabindex="0">Education</h3>
+              <div class="education-timeline">
+                <div class="timeline-item" tabindex="0">
+                  <div class="timeline-content">
+                    <div class="timeline-date">February 2025 - Present</div>
+                    <h3 class="timeline-title">Post Graduate Diploma in Big Data Analytics (PG-DBDA)</h3>
+                    <div class="timeline-subtitle">Centre for Development of Advanced Computing (CDAC), Kharghar</div>
+                    <p class="timeline-description">Currently pursuing a Post Graduate Diploma focusing on Big Data Analytics. Gaining hands-on experience with industry-relevant tools and technologies through projects and practicals.</p>
+                    <ul class="timeline-achievements">
+                      <li><strong>Relevant Coursework:</strong> Data Analytics, Big Data Technologies, Python, SQL, Hive, PySpark, Hadoop, Machine Learning</li>
+                      <li><strong>Activities:</strong> Hands-on projects in Big Data, group assignments, CloudLabs-based practicals</li>
+                      <li><strong>Projects:</strong>
+                        <ul>
+                          <li>Built a stock trend forecasting model using PySpark</li>
+                          <li>Analyzed airline data to generate insights using PySpark RDDs</li>
+                          <li>Worked with HDFS and Hive for large-scale data storage and querying</li>
+                        </ul>
+                      </li>
+                      <li><strong>Tools:</strong> Jupyter Notebook, CloudLabs, HDFS, Hive, PySpark</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="timeline-item" tabindex="0">
+                  <div class="timeline-content">
+                    <div class="timeline-date">2020 - 2024</div>
+                    <h3 class="timeline-title">Bachelor of Technology</h3>
+                    <div class="timeline-subtitle">Dr Babasaheb Ambedkar Technological University, Lonere</div>
+                    <p class="timeline-description">Electronics and Telecommunication Engineering. Developed strong foundation in electronics, signal processing, and communication systems. Enhanced programming and problem-solving skills through practical projects.</p>
+                    <ul class="timeline-achievements">
+                      <li><strong>CGPA:</strong> 8.33</li>
+                      <li><strong>Achievement:</strong> Received $800 POSCO Scholarship</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="timeline-item" tabindex="0">
+                  <div class="timeline-content">
+                    <div class="timeline-date">2018 - 2019</div>
+                    <h3 class="timeline-title">Higher Secondary School (XII - CBSE)</h3>
+                    <div class="timeline-subtitle">Bhavan's B.P Vidya Mandir, Ashti</div>
+                    <p class="timeline-description">Completed Higher Secondary Certificate under Central Board of Secondary Education (CBSE) with Science stream. Built strong foundation in Mathematics, Physics, and other core science subjects.</p>
+                    <ul class="timeline-achievements">
+                      <li><strong>Achievement:</strong> Won Second Prize in Jindal Science Conclave</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="skills-card">
+            <h2 class="skills-title" tabindex="0">Skills</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="skills-subtitle">Technical Skills</h3>
+                <div class="skills-group">
+                  <h4 class="skills-group-title">Programming Languages</h4>
+                  <ul class="skills-list">
+                    <li><i class="fab fa-python"></i> Python <div class="skill-bar"><div class="skill-bar-fill" style="width: 92%" aria-label="Python proficiency: 92 percent" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                    <li><i class="fab fa-java"></i> Java <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%" aria-label="Java proficiency: 80 percent" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  </ul>
+                </div>
+                <div class="skills-group">
+                  <h4 class="skills-group-title">Data Science & ML Tools</h4>
+                  <ul class="skills-list">
+                    <li><i class="fas fa-brain"></i> Machine Learning <div class="skill-bar"><div class="skill-bar-fill" style="width: 88%" aria-label="Machine Learning proficiency: 88 percent" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                    <li><i class="fas fa-chart-bar"></i> Data Visualization <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%" aria-label="Data Visualization proficiency: 80 percent" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                    <li><i class="fas fa-project-diagram"></i> Deep Learning <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%" aria-label="Deep Learning proficiency: 75 percent" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                    <li><i class="fas fa-database"></i> Pandas/Scikit-learn <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%" aria-label="Pandas and Scikit-learn proficiency: 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  </ul>
+                </div>
+                <div class="skills-group">
+                  <h4 class="skills-group-title">Big Data & Databases</h4>
+                  <ul class="skills-list">
+                    <li><i class="fas fa-database"></i> SQL <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%" aria-label="SQL proficiency: 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                    <li><i class="fas fa-server"></i> Big Data <div class="skill-bar"><div class="skill-bar-fill" style="width: 78%" aria-label="Big Data proficiency: 78 percent" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="skills-subtitle">Soft Skills</h3>
+                <ul class="skills-list soft-skills-list">
+                  <li><i class="fas fa-users"></i> Teamwork <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%" aria-label="Teamwork proficiency: 90 percent" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  <li><i class="fas fa-comments"></i> Communication <div class="skill-bar"><div class="skill-bar-fill" style="width: 88%" aria-label="Communication proficiency: 88 percent" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  <li><i class="fas fa-lightbulb"></i> Problem Solving <div class="skill-bar"><div class="skill-bar-fill" style="width: 92%" aria-label="Problem Solving proficiency: 92 percent" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  <li><i class="fas fa-tasks"></i> Project Management <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%" aria-label="Project Management proficiency: 80 percent" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  <li><i class="fas fa-user-clock"></i> Time Management <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%" aria-label="Time Management proficiency: 85 percent" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                  <li><i class="fas fa-brain"></i> Adaptability <div class="skill-bar"><div class="skill-bar-fill" style="width: 87%" aria-label="Adaptability proficiency: 87 percent" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div></div></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="projects-title" tabindex="0">Projects</h2>
+      <!-- Personal Intro for Projects Section -->
+      <p class="projects-intro text-center mb-4" style="color:rgba(255,255,255,0.95);font-size:1.15rem;">
+        I love building solutions that blend data, software, and hardware. My projects reflect my passion for solving real-world problems with technology, creativity, and a hands-on approach.
+      </p>
+      <!-- Section Navigation -->
+      <div class="projects-nav mb-4 text-center">
+        <a href="#technical-projects" class="btn btn-tech-projects mx-2">Technical Projects</a>
+        <a href="#hardware-projects" class="btn btn-hardware-projects mx-2">Hardware & IoT Projects</a>
+      </div>
+      <!-- Technical Projects -->
+      <h3 id="technical-projects" class="projects-title" style="font-size:2rem;" tabindex="0">Technical Projects</h3>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="project-card project-modal-trigger" data-project="eventease" tabindex="0">
+            <img src="assets/home.png" alt="EventEase" class="project-img mb-2" loading="lazy" />
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <h3 class="project-title">EventEase</h3>
+            </div>
+            <p class="project-description">A comprehensive event management system built with Python Flask and SQL. Streamlines event planning, registration, and management processes with an intuitive interface.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">Bootstrap</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li><strong>Role:</strong> Backend Developer</li>
+              <li><strong>Date:</strong> 2025</li>
+              <li><strong>Impact:</strong> Simplified event management for users and organizers.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Vineet-Singh0/EventEase" class="project-link" target="_blank" rel="noopener" loading="lazy">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card project-modal-trigger" data-project="fraud" tabindex="0">
+            <img src="assets/fraud-detection-using-machine-ml.png" alt="Fraud Detection System" class="project-img mb-2" loading="lazy" />
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="project-title">Fraud Detection System</h3>
+            </div>
+            <p class="project-description">Developed a machine learning pipeline to detect online fraud in real-time. Analyzed large transaction datasets and built classification models to identify suspicious activity with improved accuracy.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Scikit-learn</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Jupyter</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li><strong>Role:</strong> Data Scientist</li>
+              <li><strong>Date:</strong> 2024</li>
+              <li><strong>Impact:</strong> Improved fraud detection accuracy and reduced false positives.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Vineet-Singh0/Online-Fraud-Detection-Using-Machine-Learning" class="project-link" target="_blank" rel="noopener" loading="lazy">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card project-modal-trigger" data-project="certifyme" tabindex="0">
+            <img src="assets/CertifyMe.png" alt="CertifyMe Platform" class="project-img mb-2" loading="lazy" />
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <h3 class="project-title">CertifyMe Platform</h3>
+            </div>
+            <p class="project-description">Online platform for secure digital certificate issuance and management. Features automated certificate generation, verification, and blockchain-based authenticity.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Web Development</span>
+              <span class="tech-badge">Security</span>
+              <span class="tech-badge">Database</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li><strong>Role:</strong> Full Stack Developer</li>
+              <li><strong>Date:</strong> 2023</li>
+              <li><strong>Impact:</strong> Streamlined certificate management for educational institutions.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Vineet-Singh0/CertifyMe" class="project-link" target="_blank" rel="noopener" loading="lazy">
+                <i class="fab fa-github"></i>
+                View Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hardware & IoT Projects -->
+      <h3 id="hardware-projects" class="projects-title mt-5" style="font-size:2rem;" tabindex="0">Hardware & IoT Projects</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="project-card project-modal-trigger" data-project="wildlife" tabindex="0">
+            <img src="assets/train collision.jpg" alt="Wildlife Train Collision Prevention" class="project-img mb-2" loading="lazy" />
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-train"></i>
+              </div>
+              <h3 class="project-title">Wildlife Train Collision Prevention</h3>
+            </div>
+            <p class="project-description">Innovative system using Arduino and IR sensors to detect and prevent wildlife collisions on railway tracks. Features early warning system and automated alerts.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Arduino</span>
+              <span class="tech-badge">IR Sensors</span>
+              <span class="tech-badge">Alert Systems</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li><strong>Role:</strong> Embedded Systems Engineer</li>
+              <li><strong>Date:</strong> 2023</li>
+              <li><strong>Impact:</strong> Reduced animal fatalities and improved railway safety.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Vineet-Singh0/Mitigating-Railway-Collision-with-Wildlife" class="project-link" target="_blank" rel="noopener" loading="lazy">
+                <i class="fa-solid fa-file-lines"></i>
+                Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card project-modal-trigger" data-project="gasleak" tabindex="0">
+            <img src="assets/gas detection.jpg" alt="Gas Leakage Detection System" class="project-img mb-2" loading="lazy" />
+            <div class="project-header">
+              <div class="project-icon">
+                <i class="fa-solid fa-sensor"></i>
+              </div>
+              <h3 class="project-title">Gas Leakage Detection System</h3>
+            </div>
+            <p class="project-description">Safety system using Arduino and gas sensors for real-time monitoring and alerting of hazardous gas leaks. Features automated emergency responses.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Arduino</span>
+              <span class="tech-badge">Sensors</span>
+              <span class="tech-badge">Real-time Alerts</span>
+            </div>
+            <ul class="timeline-achievements">
+              <li><strong>Role:</strong> Embedded Systems Engineer</li>
+              <li><strong>Date:</strong> 2022</li>
+              <li><strong>Impact:</strong> Enabled real-time notifications and improved safety.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Vineet-Singh0/Gas-Leakage-Detection-and-Alerting-System" class="project-link" target="_blank" rel="noopener" loading="lazy">
+                <i class="fa-solid fa-file-lines"></i>
+                Documentation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Project Modals -->
+      <div id="project-modals">
+        <!-- Fraud Detection Modal -->
+        <div class="modal fade" id="modal-fraud" tabindex="-1" aria-labelledby="modal-fraud-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-fraud-label">Fraud Detection System</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close project details modal"></button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/fraud-detection-using-machine-ml.png" alt="Fraud Detection System" class="modal-project-img mb-3" loading="lazy" />
+                <p>Developed a machine learning pipeline to detect online fraud in real-time. Analyzed large transaction datasets and built classification models to identify suspicious activity with improved accuracy.</p>
+                <ul>
+                  <li><strong>Role:</strong> Data Scientist</li>
+                  <li><strong>Date:</strong> 2023</li>
+                  <li><strong>Impact:</strong> Improved fraud detection accuracy and reduced false positives.</li>
+                  <li><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, Jupyter</li>
+                </ul>
+                <a href="https://github.com/Vineet-Singh0/Online-Fraud-Detection-Using-Machine-Learning" class="btn btn-accent" target="_blank" rel="noopener" loading="lazy"><i class="fab fa-github me-2"></i>View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CertifyMe Modal -->
+        <div class="modal fade" id="modal-certifyme" tabindex="-1" aria-labelledby="modal-certifyme-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-certifyme-label">CertifyMe Platform</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close project details modal"></button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/CertifyMe.png" alt="CertifyMe Platform" class="modal-project-img mb-3" loading="lazy" />
+                <p>Online platform for secure digital certificate issuance and management. Features automated certificate generation, verification, and blockchain-based authenticity.</p>
+                <ul>
+                  <li><strong>Role:</strong> Full Stack Developer</li>
+                  <li><strong>Date:</strong> 2023</li>
+                  <li><strong>Impact:</strong> Streamlined certificate management for educational institutions.</li>
+                  <li><strong>Tech Stack:</strong> Web Development, Security, Database</li>
+                </ul>
+                <a href="https://github.com/Vineet-Singh0/CertifyMe" class="btn btn-accent" target="_blank" rel="noopener" loading="lazy"><i class="fab fa-github me-2"></i>View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EventEase Modal -->
+        <div class="modal fade" id="modal-eventease" tabindex="-1" aria-labelledby="modal-eventease-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-eventease-label">EventEase</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close project details modal"></button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/project-placeholder.png" alt="EventEase" class="modal-project-img mb-3" loading="lazy" />
+                <p>A comprehensive event management system built with Python Flask and SQL. Streamlines event planning, registration, and management processes with an intuitive interface.</p>
+                <ul>
+                  <li><strong>Role:</strong> Backend Developer</li>
+                  <li><strong>Date:</strong> 2025</li>
+                  <li><strong>Impact:</strong> Simplified event management for users and organizers.</li>
+                  <li><strong>Tech Stack:</strong> Python, Flask, SQL, Bootstrap</li>
+                </ul>
+                <a href="#" class="btn btn-accent" target="_blank" rel="noopener" loading="lazy"><i class="fab fa-github me-2"></i>View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Wildlife Modal -->
+        <div class="modal fade" id="modal-wildlife" tabindex="-1" aria-labelledby="modal-wildlife-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-wildlife-label">Wildlife Train Collision Prevention</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close project details modal"></button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/train collision.jpg" alt="Wildlife Train Collision Prevention" class="modal-project-img mb-3" loading="lazy" />
+                <p>Innovative system using Arduino and IR sensors to detect and prevent wildlife collisions on railway tracks. Features early warning system and automated alerts.</p>
+                <ul>
+                  <li><strong>Role:</strong> Embedded Systems Engineer</li>
+                  <li><strong>Date:</strong> 2023</li>
+                  <li><strong>Impact:</strong> Reduced animal fatalities and improved railway safety.</li>
+                  <li><strong>Tech Stack:</strong> Arduino, IR Sensors, Alert Systems</li>
+                </ul>
+                <a href="https://github.com/Vineet-Singh0/Mitigating-Railway-Collision-with-Wildlife" class="btn btn-accent" target="_blank" rel="noopener" loading="lazy"><i class="fa-solid fa-file-lines me-2"></i>Documentation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Gas Leak Modal -->
+        <div class="modal fade" id="modal-gasleak" tabindex="-1" aria-labelledby="modal-gasleak-label" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-gasleak-label">Gas Leakage Detection System</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close project details modal"></button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/gas detection.jpg" alt="Gas Leakage Detection System" class="modal-project-img mb-3" loading="lazy" />
+                <p>Safety system using Arduino and gas sensors for real-time monitoring and alerting of hazardous gas leaks. Features automated emergency responses.</p>
+                <ul>
+                  <li><strong>Role:</strong> Embedded Systems Engineer</li>
+                  <li><strong>Date:</strong> 2022</li>
+                  <li><strong>Impact:</strong> Enabled real-time notifications and improved safety.</li>
+                  <li><strong>Tech Stack:</strong> Arduino, Sensors, Real-time Alerts</li>
+                </ul>
+                <a href="https://github.com/Vineet-Singh0/Gas-Leakage-Detection-and-Alerting-System" class="btn btn-accent" target="_blank" rel="noopener" loading="lazy"><i class="fa-solid fa-file-lines me-2"></i>Documentation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="resume-card glass-resume-card text-center">
+            <div class="card-body">
+              <i class="fa-solid fa-file-lines fa-3x text-accent mb-3"></i>
+              <h2 class="card-title mb-3">Resume</h2>
+              <ul class="resume-highlights text-start mx-auto mb-4">
+                <li><i class="fa-solid fa-circle-check text-accent me-2"></i> Strong foundation in Data Science, Machine Learning, and Big Data analytics</li>
+                <li><i class="fa-solid fa-circle-check text-accent me-2"></i> Experience with end-to-end project development and deployment</li>
+                <li><i class="fa-solid fa-circle-check text-accent me-2"></i> Awarded POSCO Scholarship for academic excellence</li>
+                <li><i class="fa-solid fa-circle-check text-accent me-2"></i> Excellent teamwork, communication, and leadership skills</li>
+                <li><i class="fa-solid fa-circle-check text-accent me-2"></i> Passionate about solving real-world problems with technology</li>
+              </ul>
+              <a href="assets/CDAC_Interview_Resume.pdfr" class="btn btn-accent btn-lg resume-download-btn" download aria-label="Download Resume PDF"><i class="fa-solid fa-download me-2"></i>Download Resume (PDF)</a>
+              <span class="download-feedback" style="display:none;">Downloaded!</span>
+              <p class="resume-updated-date mt-3" style="color:rgba(255,255,255,0.7);font-size:0.98rem;">Last updated: June 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <div class="glass-contact-card contact-card">
+            <div class="card-body">
+              <h2 class="card-title mb-3"><i class="fa-solid fa-envelope me-2"></i>Contact</h2>
+              <form id="contactForm" action="https://formspree.io/f/mpwdqyoq" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required placeholder="you@email.com">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="3" required placeholder="Type your message..."></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="btn btn-accent">Send</button>
+                <span class="contact-feedback" style="display:none;"></span>
+              </form>
+              <div class="contact-reply-note mt-3 mb-2 text-center" style="color:rgba(255,255,255,0.7);font-size:0.98rem;">
+                <i class="fa-regular fa-clock me-1"></i>I usually reply within 24 hours
+              </div>
+              <div class="contact-socials mt-4 text-center">
+                <a href="https://www.linkedin.com/in/vineet-vinod-singh/" class="contact-social-link" target="_blank" aria-label="LinkedIn" data-bs-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Vineet-Singh0" class="contact-social-link" target="_blank" aria-label="GitHub" data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:vineet.svr@gmail.com" class="contact-social-link" aria-label="Email" data-bs-toggle="tooltip" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <button class="btn btn-outline-light btn-copy-email ms-2" data-email="vineet.svr@gmail.com" aria-label="Copy email address" type="button"><i class="fa-regular fa-copy"></i></button>
+                <span class="copy-email-tooltip" style="display:none;">Copied!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 footer-gradient text-light">
+    <div class="container">
+      <div class="mb-2">
+        <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-light"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      &copy; 2025 Vineet Singh. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/scripts.js"></script>
+  </body>
+</html>
